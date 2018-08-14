@@ -1,0 +1,35 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+
+.title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  color: #23527c;
+
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.timestamp {
+  font-size: 8px;
+  color: gray;
+}
+
+.inter-article-space {
+  margin-bottom: 50px;
+}

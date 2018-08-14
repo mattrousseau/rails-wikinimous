@@ -1,0 +1,30 @@
+<div class="row">
+
+  <% @articles.reverse.each do |article| %>
+    <div class="col-sm-8 col-sm-off set-2">
+
+      <%= link_to article_path(article) do %>
+        <h1 class="title"><%= article.title %></h1>
+      <% end %>
+
+      <p class = "timestamp"><%= article.created_at %></p>
+
+      <%= link_to edit_article_path(article) do %>
+        <i class="fas fa-pen"></i>
+      <% end %>
+
+      <%= link_to article_path(article), method: :delete,
+      data: { confirm: "Are you sure?" } do %>
+        <i class="far fa-trash-alt"></i>
+      <% end %>
+
+      <hr>
+
+      <p><%= article.content %></p>
+
+      <div class="inter-article-space"></div>
+
+    </div>
+  <% end %>
+
+</div>
